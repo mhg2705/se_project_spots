@@ -1,21 +1,11 @@
-# Project 3: Spots
+Project 3: Spots
 
-### Overview  
+This project is a web application to share photos. The user is able to edit their profile, add post, share a comment with every picture and "like" them.
 
-* Intro  
-* Figma  
-* Images  
+The project is responsive to any type of device, it adapts to different screen sizes. There are buttons interact with hovering. 
   
-**Intro**
+To create this project I used HTML for the structure and CSS for the styling. Everything was based of the measures from the Figma exaple that was provided and following the instructions that were assigned. The main technique used in this project was the BEM methodologhy. When the project was done, I submitted it to Github.
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
+Here are some images showing what the project is 
   
 Good luck and have fun!
