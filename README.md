@@ -16,3 +16,9 @@ Mobile View
   
 The link to my project is 
 git@github.com:mhg2705/se_project_spots.git
+
+
+The link to the video where I explain the project is
+https://drive.google.com/file/d/1OAP-4co-HPAD_Nuv7R35rrLvArzgTkc_/view?usp=sharing
+
+Thank you!
