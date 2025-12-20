@@ -15,7 +15,7 @@ Mobile View
 [Mobile view of the project](./images/Mobile%20view.png)
   
 The link to my project is 
-git@github.com:mhg2705/se_project_spots.git
+https://git@github.com:mhg2705/se_project_spots.git
 
 
 The link to the video where I explain the project is
