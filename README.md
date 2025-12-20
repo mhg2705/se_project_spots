@@ -6,6 +6,13 @@ The project is responsive to any type of device, it adapts to different screen s
   
 To create this project I used HTML for the structure and CSS for the styling. Everything was based of the measures from the Figma exaple that was provided and following the instructions that were assigned. The main technique used in this project was the BEM methodologhy. When the project was done, I submitted it to Github.
   
-Here are some images showing what the project is 
+Here are some images showing what the project does.
+
+Desktop View
+[Desktop view of the project](./images/Desktop%20view.png)
+
+Mobile View  
+[Mobile view of the project](./images/Mobile%20view.png)
   
-Good luck and have fun!
+The link to my project is 
+git@github.com:mhg2705/se_project_spots.git
