@@ -67,6 +67,7 @@ opacity: 100%;
   gap: 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   border-radius: 8px;
   background-color: #212121;
@@ -80,6 +81,7 @@ opacity: 100%;
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
+  border: none;
 }
 
 .profile__add-btn:hover {

@@ -16,6 +16,7 @@ margin-bottom: 12px;
 }
 
   .card__title {
+    margin: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
