@@ -101,7 +101,7 @@ color: #21212170;
   transition: background-color 0.3s ease, opacity 0.2s ease;
 }
 
-.modalsubmit-btn:hover {
+.modal__submit-btn:hover {
   background-color: rgba(33,33,33,0.08);
   opacity: 0.95;
 }

@@ -48,7 +48,7 @@ function handleNewPostSubmit(evt){
 modalForm.addEventListener("submit", handleNewPostSubmit);
 
 newPostCloseBtn.addEventListener("click", function(){
-  closeModal(editProfileModal);
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSubmit(evt){
