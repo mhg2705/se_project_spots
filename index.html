@@ -39,18 +39,18 @@
 
         <template id="card-template">
 
-           <li class="card">
-          <img
-          src="#"
-          alt=""
-          class="card__image"
+          <li class="card">
+            <img
+            src="#"
+            alt=""
+            class="card__image"
           />
           <button class="card__delete-button" type="button"></button>
           <div class="card__content">
             <h2 class="card__title"></h2>
             <button type="button" class="card__like-button"></button>
           </div>
-        </li>
+          </li>
         </template>
 
       </ul>
@@ -64,7 +64,7 @@
   <div class="modal" id="edit-profile-modal">
     <div class="modal__container">
       <button type="button" class="modal__close-btn">
-         <img src="./images/Close Icon.svg" alt="Close-Icon" class="modal__close-icon" />
+         <img src="./images/Close-Icon.svg" alt="Close-Icon" class="modal__close-icon" />
       </button>
       <h2 class="modal__title">Edit profile</h2>
       <form class="modal__form">
@@ -75,6 +75,7 @@
         type="text"
         class="modal__input"
         placeholder="Type your name"
+        required
         />
       </label>
 
@@ -85,6 +86,7 @@
         type="text"
         class="modal__input"
         placeholder="Describe yourself"
+        required
         />
       </label>
       <button type="submit" class="modal__submit-btn">Save</button>
@@ -93,10 +95,10 @@
   </div>
 
 
-   <div class="modal" id="new-post-modal">
+  <div class="modal" id="new-post-modal">
     <div class="modal__container">
       <button type="button" class="modal__close-btn">
-         <img src="./images/Close Icon.svg" alt="Close-Icon" class="modal__close-icon" />
+         <img src="./images/Close-Icon.svg" alt="Close-Icon" class="modal__close-icon" />
       </button>
       <h2 class="modal__title">New post</h2>
       <form class="modal__form">
@@ -104,7 +106,7 @@
         Image link
         <input
         id="post-link-input"
-        type="text"
+        type="url"
         class="modal__input"
         placeholder="Paste a link to the picture"
         required
