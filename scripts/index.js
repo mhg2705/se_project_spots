@@ -29,6 +29,16 @@ const initialCards = [
   },
 ];
 
+const settings = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtonSelector: ".modal__button",
+  inactiveButtonClass: "modal__button_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible"
+};
+
+//Profile elements
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -41,6 +51,7 @@ const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
 const modalForm = newPostModal.querySelector(".modal__form");
+const cardSubmitBtn = newPostModal.querySelector(".modal__button");
 const postLinkInput = newPostModal.querySelector("#post-link-input");
 const postCaptionInput = newPostModal.querySelector("#post-caption-input");
 
@@ -52,8 +63,7 @@ const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaptionEl = previewModal.querySelector(".modal__caption");
 
-const cardTemplate = document
-.querySelector("#card-template")
+const cardTemplate = document.querySelector("#card-template")
 .content.querySelector(".card");
 const cardsList = document.querySelector(".cards__list");
 
@@ -97,6 +107,7 @@ function closeModal(modal) {
 editProfileBtn.addEventListener("click", function(){
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  resetValidation(editProfileForm, [editProfileNameInput, editProfileDescriptionInput], settings);
   openModal(editProfileModal);
 });
 
@@ -114,17 +125,11 @@ previewModalCloseBtn.addEventListener("click", function(){
 
 function handleNewPostSubmit(evt){
   evt.preventDefault();
-
-  const inputValues = {
-    name: postCaptionInput.value,
-    link: postLinkInput.value,
-  };
-
+  const inputValues = {name: postCaptionInput.value, link: postLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-
   evt.target.reset();
-
+  disableButton(cardSubmitBtn, settings);
   closeModal(newPostModal);
 };
 
@@ -148,3 +153,5 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+enableValidation(settings);

@@ -21,4 +21,9 @@ https://mhg2705.github.io/se_project_spots/
 The link to the video where I explain the project is
 https://drive.google.com/file/d/1OAP-4co-HPAD_Nuv7R35rrLvArzgTkc_/view?usp=sharing
 
+
+The link to the video for the Project Spots stage 9 is the the following.
+https://drive.google.com/file/d/1pDNqzGMAChqDNTU-Cya6Dip5vYjfIKkk/view?usp=drive_link
+During the video I explain exactly what I worked on during this stage.
+
 Thank you!

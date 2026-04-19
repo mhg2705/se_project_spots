@@ -73,6 +73,8 @@ margin: 0 0 32px;
 font-size: 16px;
 color: #212121;
 opacity: 0.7;
+margin-bottom: 32px;
+display: block;
 }
 
 .modal__input::placeholder {
@@ -106,7 +108,7 @@ opacity: 0.7;
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.4);
   opacity: 0.7;
-  margin: 8px auto;
+  margin: 8px 0 0;
   width: 100%;
   position: relative;
   height: 52px;
@@ -118,7 +120,21 @@ opacity: 0.7;
   opacity: 100%;
 }
 
-.modal__submit-btn {
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__error {
+  margin-top: 8px;
+  display: none;
+  color: red;
+}
+
+.modal__error_visible {
+  display: block;
+}
+
+.modal__button {
   gap: 8px;
   display: flex;
   align-items: center;
@@ -138,15 +154,21 @@ opacity: 0.7;
   border: none;
 }
 
-.modal__submit-btn:hover {
+.modal__button:hover {
  background-color: rgba(33, 33, 33, 0.7);
   opacity: 0.7;
+}
+
+.modal__button_disabled {
+  background: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
 }
 
 @media screen and (max-width: 627px) {
 
 
-.modal__submit-btn {
+.modal__button {
   margin: 0;
   margin-bottom: 12px;
   width: 100%;
