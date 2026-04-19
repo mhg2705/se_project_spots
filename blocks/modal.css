@@ -117,7 +117,7 @@ display: block;
 
 .modal__input:hover {
   border: 1px solid rgba(33, 33, 33, 0.8);
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__input_type_error {

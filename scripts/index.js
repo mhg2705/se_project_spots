@@ -96,12 +96,31 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function handleEscape(evt) {
+  if (evt.key === 'Escape') {
+    const openedModal = document.querySelector('.modal_is-opened');
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  modal.addEventListener('click', handleOverlayClick);
+  document.addEventListener('keydown', handleEscape);
+}
+
+function handleOverlayClick(evt) {
+  if (evt.target === evt.currentTarget || evt.target.classList.contains('modal')) {
+    closeModal(evt.currentTarget);
+  }
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  modal.removeEventListener('click', handleOverlayClick);
+  document.removeEventListener('keydown', handleEscape);
 }
 
 editProfileBtn.addEventListener("click", function(){
@@ -153,5 +172,3 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
-
-enableValidation(settings);
